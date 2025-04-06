@@ -1,16 +1,26 @@
-import { Stack } from "expo-router";
-import "../global.css";
+import { View, Text } from 'react-native'
+import React from 'react'
+import { Tabs } from 'expo-router'
 
-export default function RootLayout() {
+const _layout = () => {
   return (
-    <Stack>
-      <Stack.Screen
-        name="(tabs)"
+    <Tabs>
+      <Tabs.Screen
+        name="index"
         options={{
-          title: "Home",
+          title: 'Home',
           headerShown: false,
         }}
       />
-    </Stack>
-  );
+      <Tabs.Screen
+        name="movies"
+        options={{
+          title: 'Movies',
+          headerShown: false,
+        }}
+      />
+    </Tabs>
+  )
 }
+
+export default _layout
