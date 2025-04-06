@@ -5,7 +5,7 @@ export default function Index() {
     <View
      className="flex-1 justify-center items-center"
     >
-      <Text className="text-4xl font-bold text-accent">Mega death Concert.</Text>
+      <Text className="text-4xl font-bold text-accent">Home Screen</Text>
     </View>
   );
 }
